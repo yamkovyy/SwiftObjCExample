@@ -17,7 +17,7 @@
 
 @interface LocationManager : NSObject
 
-@property (nonatomic, strong) id delegate;
+@property (nonatomic, weak) id delegate;
 
 + (LocationManager*)sharedManager;
 - (float)getCurrentLongitude;
